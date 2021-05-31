@@ -6,3 +6,5 @@
 <img src="./assets/image/login.jpg" width="100%">
 <br/>
 <img src="./assets/image/validate.jpg" width="100%">
+<br/>
+<img src="./assets/image/register.jpg" width="100%">
