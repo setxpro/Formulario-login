@@ -16,17 +16,11 @@
             
             <label for="name">
                 <i class="fas fa-user icon"></i>
-                <input type="text" name="name" placeholder="Username" data-rules="required|min=2"/>
+                <input type="text" name="nome" placeholder="Username" data-rules="required|min=2"/>
             </label><br/><br/>
-
-            <label for="email">
-                <i class="fas fa-user icon"></i>
-                <input type="email" name="email" placeholder="Email" data-rules="required|email"/>
-            </label><br/><br/>
-
             <label for="password">
                 <i class="fas fa-lock icon"></i>
-                <input type="password" name="password" placeholder="Password" data-rules="required|min=4"/>
+                <input type="password" name="senha" placeholder="Password" data-rules="required|min=4"/>
             </label><br/><br/>
 
             <div class="area-input-check-forget">
@@ -35,11 +29,17 @@
                 </div>
 
                 <div class="forget">
-                    <a href="index.html">Voltar para login</a>
+                    <a href="">Forgot password ?</a>
                 </div>
             </div>
-            <input type="submit" value="Register" class="button"/>
+            <div class="area-btn">
+                <input type="submit" value="Login" class="button"/>
+                <a href="create.php"><input type="button" value="Register" class="button" /></a>
+            </div>
         </form>
+    </div>
+    
+</form>
     </div>
 
     <script src="./assets/js/script.js"></script>

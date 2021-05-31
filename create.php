@@ -12,15 +12,21 @@
 <body>
     <div class="container-form">
         <i class="fas fa-user-tie avatar"></i>
-        <form method="POST" class="validator">
+        <form method="POST" class="validator" action="./actions/action_add.php">
             
             <label for="name">
                 <i class="fas fa-user icon"></i>
-                <input type="text" name="name" placeholder="Username" data-rules="required|min=2"/>
+                <input type="text" name="nome" placeholder="Username" data-rules="required|min=2"/>
             </label><br/><br/>
+
+            <label for="email">
+                <i class="fas fa-user icon"></i>
+                <input type="email" name="email" placeholder="Email" data-rules="required|email"/>
+            </label><br/><br/>
+
             <label for="password">
                 <i class="fas fa-lock icon"></i>
-                <input type="password" name="password" placeholder="Password" data-rules="required|min=4"/>
+                <input type="password" name="senha" placeholder="Password" data-rules="required|min=4"/>
             </label><br/><br/>
 
             <div class="area-input-check-forget">
@@ -29,17 +35,11 @@
                 </div>
 
                 <div class="forget">
-                    <a href="">Forgot password ?</a>
+                    <a href="index.php">Voltar para login</a>
                 </div>
             </div>
-            <div class="area-btn">
-                <input type="submit" value="Login" class="button"/>
-                <a href="create.html"><input type="button" value="Register" class="button" /></a>
-            </div>
+            <input type="submit" value="Register" class="button"/>
         </form>
-    </div>
-    
-</form>
     </div>
 
     <script src="./assets/js/script.js"></script>
